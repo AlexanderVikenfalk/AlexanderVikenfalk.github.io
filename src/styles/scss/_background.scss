@@ -1,5 +1,5 @@
 @function generateStars ($amount) {
-  $color: #FFF;
+  $color: #E98074;
   $value: ();
   @for $i from 2 through $amount {
     $offset-x: random(2000) + px;
@@ -15,9 +15,14 @@ $shadows-medium: generateStars(200);
 $shadows-large: generateStars(100);
 
 .background {
-  height: 100%;
-  background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background-color: #EAE7DC;
   overflow: hidden;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 
 

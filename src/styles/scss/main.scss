@@ -1,4 +1,9 @@
 // main file for collecting all scss files
+@import "mixins";
 @import "index";
 @import "app";
 @import "background";
+@import "navigation";
+@import "about";
+@import "projects";
+@import "contact";

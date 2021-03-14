@@ -1,0 +1,30 @@
+.contact {
+  display: inline-block;
+  width: 40%;
+  border: solid 2px #41403E;
+  //transform: skew(-10deg) rotate(2deg);
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+}
+
+.contact p {
+  //transform: skew(10deg) rotate(-2deg);
+  padding: 3% 2%;
+}
+
+.contact__icon {
+  width: 100%;
+  display: inline-block;
+  padding: 1% 0;
+}
+
+.contact__linkedin {
+  @include icon("linkedin");
+}
+
+.contact__email {
+  @include icon("mail");
+}
+
+.contact__github {
+  @include icon("github");
+}

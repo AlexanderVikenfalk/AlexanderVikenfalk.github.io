@@ -1,9 +1,11 @@
 .contact {
+  margin: $item-margin;
+  align-self: center;
   display: inline-block;
   width: 40%;
   border: solid 2px #41403E;
   //transform: skew(-10deg) rotate(2deg);
-  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  //border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
 }
 
 .contact p {

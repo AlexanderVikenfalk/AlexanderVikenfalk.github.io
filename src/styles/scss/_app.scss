@@ -1,7 +1,8 @@
 .app {
+  display: flex;
   padding: 0 20%;
-  overflow-x: hidden;
   height: 100%;
   text-align: center;
-  justify-content: center;
+  justify-content: space-between;
+  flex-direction: column;
 }

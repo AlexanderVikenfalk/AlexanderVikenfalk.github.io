@@ -1,5 +1,5 @@
 @function generateStars ($amount) {
-  $color: #E98074;
+  $color: $color-highlight-light;
   $value: ();
   @for $i from 2 through $amount {
     $offset-x: random(2000) + px;
@@ -13,18 +13,16 @@
 $shadows-small: generateStars(700);
 $shadows-medium: generateStars(200);
 $shadows-large: generateStars(100);
-
 .background {
   position: fixed;
   height: 100vh;
   width: 100vw;
-  background-color: #EAE7DC;
+  background-color: $color-bg;
   overflow: hidden;
   top: 0;
   left: 0;
   z-index: -1;
 }
-
 
 .background__stars--small {
   width: 1px;
@@ -80,12 +78,6 @@ $shadows-large: generateStars(100);
   }
 }
 
-span {
-  background: -webkit-linear-gradient(white, #38495a);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
 @keyframes animStar {
   from {
     transform: translateY(0px)
@@ -93,6 +85,4 @@ span {
   to {
     transform: translateY(-2000px)
   }
-}
-
-;
+} ;

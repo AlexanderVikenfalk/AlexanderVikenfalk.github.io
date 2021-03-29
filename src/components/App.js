@@ -11,8 +11,8 @@ function App() {
             <Background/>
             <Navigation/>
             <About/>
-            <Contact/>
             <Projects/>
+            <Contact/>
         </div>
     );
 }
